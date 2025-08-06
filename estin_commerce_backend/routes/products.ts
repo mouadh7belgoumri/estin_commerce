@@ -18,8 +18,11 @@ productsRouter.get("/", async (req: Request, res: Response) => {
 })
 productsRouter.post("/", async (req: Request, res: Response) => {
     try {
+        
         const productData = req.body;
-        await prisma.products.create({ data: productData });
+        
+        
+        await prisma.products.create({ data:productData  });
         res.send({ message: "product added successfully" })
     } catch (error) {
         console.error(error, "failed to add product");
@@ -27,4 +30,14 @@ productsRouter.post("/", async (req: Request, res: Response) => {
     finally {
         await prisma.$disconnect
     }
+    
 })
+productsRouter.delete('/:id', async(req: Request, res:Response)=>{
+    try {
+        await prisma.products.delete({where : {id : parseInt(req.params.id!)}})
+        res.send({message :"product remover successfully"})
+    } catch (error) {
+        console.error(error, "couldn't delete product");
+    }
+})
+ 

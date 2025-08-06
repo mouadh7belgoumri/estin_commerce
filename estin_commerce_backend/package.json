@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon index.js",
+    "dev": "npx tsx index.ts"
   },
   "repository": {
     "type": "git",

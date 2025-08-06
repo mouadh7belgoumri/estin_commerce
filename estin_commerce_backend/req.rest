@@ -1,0 +1,14 @@
+GET http://localhost:8000/api/products
+###
+POST http://localhost:8000/api/products
+Content-Type: application/json
+
+{
+    "name": "Bluetooth Speaker",
+    "description": "Portable waterproof speaker with 10-hour playtime and deep bass",
+    "price": 8999,
+    "sku": 1004,
+    "image_url": "https://example.com/images/bluetooth-speaker.jpg"
+}
+###
+DELETE http://localhost:8000/api/products/4
