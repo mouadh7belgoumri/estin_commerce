@@ -1,4 +1,12 @@
 @import 'tailwindcss';
+:root {
+    --footer-color : #1A1A1A;
+}
+
 #root {
     font-family: 'Poppins';
+}
+
+.color-footer {
+    background-color: var(--footer-color);
 }

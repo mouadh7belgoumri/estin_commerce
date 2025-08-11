@@ -4,7 +4,7 @@ import { Link } from "react-router"
 const Header = () => {
     return (
         <div>
-            <div className="flex flex-row justify-between my-4 mx-10 ">
+            <div className="flex flex-row justify-between mt-8 mx-10 ">
                 <h1><Link to={'/'}>logo </Link></h1>
                 <div className="flex gap-30">
                     <ul className="flex flex-row gap-15">
