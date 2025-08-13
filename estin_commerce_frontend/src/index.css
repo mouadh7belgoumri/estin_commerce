@@ -1,12 +1,46 @@
 @import 'tailwindcss';
+
 :root {
     --footer-color : #1A1A1A;
 }
 
 #root {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 .color-footer {
     background-color: var(--footer-color);
+}
+
+/* Line clamp utility for text truncation */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Additional responsive utilities */
+@media (max-width: 640px) {
+    .text-responsive {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+    }
+    
+    .heading-responsive {
+        font-size: clamp(1.5rem, 6vw, 3rem);
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Smooth transitions for better UX */
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

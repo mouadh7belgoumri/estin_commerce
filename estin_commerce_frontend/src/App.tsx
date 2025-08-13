@@ -2,15 +2,16 @@ import Header from './components/Header'
 import './App.css'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-function App() {
-  
 
+function App() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header/>
-      <Hero/>
+      <main className="flex-1">
+        <Hero/>
+      </main>
       <Footer/>
-    </>
+    </div>
   )
 }
 
