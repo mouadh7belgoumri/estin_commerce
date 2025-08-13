@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FaCartShopping, FaBars, FaXmark } from "react-icons/fa6"
+import { FaCircleUser, FaCartShopping, FaBars, FaXmark } from "react-icons/fa6"
 import { Link } from "react-router"
 import { SignedIn, SignInButton, SignedOut, UserButton } from "@clerk/clerk-react"
 
@@ -39,8 +39,7 @@ const Header = () => {
                     </ul>
                     <div className="flex gap-4 lg:gap-6">
                         <FaCartShopping className="text-2xl lg:text-3xl hover:text-gray-600 cursor-pointer transition-colors duration-200" />
-                        <SignedOut><SignInButton/></SignedOut>
-                        <SignedIn><UserButton /></SignedIn>
+                        <FaCircleUser className="text-2xl lg:text-3xl hover:text-gray-600 cursor-pointer transition-colors duration-200" />
                     </div>
                 </div>
             </nav>
@@ -53,8 +52,7 @@ const Header = () => {
                     </h1>
                     <div className="flex items-center gap-4">
                         <FaCartShopping className="text-xl" />
-                        <SignedOut><SignInButton/></SignedOut>
-                        <SignedIn><UserButton /></SignedIn>
+                        <FaCircleUser className="text-xl" />
                         <button 
                             onClick={() => setActive(!active)} 
                             className="p-2 text-xl"
