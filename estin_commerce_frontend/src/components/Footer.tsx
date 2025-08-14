@@ -23,7 +23,7 @@ const Footer = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-2 lg:mb-4">
                 Links
               </h2>
-              <ul className="flex flex-col gap-3 lg:gap-4 text-base sm:text-lg lg:text-xl xl:text-2xl font-light">
+              <ul className="flex flex-col gap-3 lg:gap-8 text-base sm:text-lg lg:text-xl xl:text-2xl font-light">
                 <li>
                   <Link 
                     to={'/'} 
@@ -46,6 +46,14 @@ const Footer = () => {
                     className="hover:text-gray-300 transition-colors duration-200"
                   >
                     About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link 
+                    to={'/about'} 
+                    className="hover:text-gray-300 transition-colors duration-200"
+                  >
+                    Suggest Products
                   </Link>
                 </li>
               </ul>

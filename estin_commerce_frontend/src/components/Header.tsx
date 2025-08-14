@@ -39,8 +39,8 @@ const Header = () => {
                     </ul>
                     <div className="flex gap-4 lg:gap-6">
                         <FaCartShopping className="text-2xl lg:text-3xl hover:text-gray-600 cursor-pointer transition-colors duration-200" />
+                        <SignedIn><UserButton/></SignedIn>
                         <SignedOut><SignInButton/></SignedOut>
-                        <SignedIn><UserButton /></SignedIn>
                     </div>
                 </div>
             </nav>
@@ -53,8 +53,8 @@ const Header = () => {
                     </h1>
                     <div className="flex items-center gap-4">
                         <FaCartShopping className="text-xl" />
+                        <SignedIn><UserButton/></SignedIn>
                         <SignedOut><SignInButton/></SignedOut>
-                        <SignedIn><UserButton /></SignedIn>
                         <button 
                             onClick={() => setActive(!active)} 
                             className="p-2 text-xl"
