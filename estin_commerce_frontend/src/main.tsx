@@ -8,6 +8,12 @@ import Shop from './pages/Shop.tsx'
 import { ClerkProvider } from '@clerk/clerk-react'
 // import CardExample from './CardExample.tsx'
 
+try {
+  console.log(import.meta.env.VITE_CLERK_DEV_PUBLISHABLE_KEY);
+} catch (error) {
+  console.error(error,"missing publishable key of clerk");
+  
+}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
