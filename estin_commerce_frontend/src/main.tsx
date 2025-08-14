@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import Shop from './pages/Shop.tsx'
 import { ClerkProvider } from '@clerk/clerk-react'
 // import CardExample from './CardExample.tsx'
-console.log(import.meta.env.VITE_CLERK_DEV_PUBLISHABLE_KEY);
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
