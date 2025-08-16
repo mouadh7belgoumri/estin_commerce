@@ -67,6 +67,7 @@ const ProductDetails = ({
       
       setAddedToCart(true);
       setTimeout(() => setAddedToCart(false), 2000);
+      toast.success("product added successfully")
     } catch (error) {
       console.error('Failed to add to cart:', error);
     } finally {
@@ -213,6 +214,7 @@ const ProductDetails = ({
                     <>
                       <FaCheck className="w-5 h-5" />
                       <span>Added to Cart!</span>
+                      
                     </>
                   ) : (
                     <>
@@ -221,6 +223,7 @@ const ProductDetails = ({
                     </>
                   )}
                 </button>
+                <ToastContainer/>
               </div>
             </form>
 
