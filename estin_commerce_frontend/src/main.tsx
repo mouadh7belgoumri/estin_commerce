@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import CardExample from './CardExample.tsx'
+import ProductDetails from './pages/ProductDetailsPage.tsx'
 import App from './App.tsx'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import Shop from './pages/Shop.tsx'
@@ -22,7 +22,7 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path='/' element={<App />} />
           <Route path='/shop' element={<Shop />} />
-          <Route path = 'cardExample' element={<CardExample/>}/>
+          <Route path = '/product_details' element={<ProductDetails/>}/>
           {/* <Route path='/about' element ={<About/>} /> */}
           {/* <Route path='/suggest' element ={<SuggestProduct/>} /> */}
         </Routes>
